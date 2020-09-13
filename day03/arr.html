@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr =[1,5,3,756,8,3,2]
+
+        arr.forEach((value,index)=>console.log(value+':'+index))
+        
+        var filterArr = arr.filter(v=>v>5)
+        filterArr.forEach((value)=>console.log(value))
+
+        var str = prompt("请输入数字数组，元素间以','分隔")
+        var arrStr = str.split(",")
+        arrStr.forEach((value,index)=>console.log(value))
+
+        var arrInt = arrStr.map(x=>parseInt(x))
+
+        arrStr.forEach((value,index)=>console.log(value))
+
+        //排序
+        var sort = arrInt.sort((a,b)=>a-b)
+        sort.forEach((value)=>console.log(value))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

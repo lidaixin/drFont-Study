@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div" onclick="changeColor()" style="width: 200px; height: 200px; background-color: blue;margin: 80px auto;"></div>
+    <script>
+        var div = document.getElementById('div')
+        function changeColor(){
+            div.style.backgroundColor = 'red'
+            // var r = getRandom(1,5)
+            var r = 4;
+            var color = ''
+            switch(r){
+                case 1:
+                    color = 'red'
+                    break
+                case 2:
+                    color = 'blue'
+                    break
+                case 3:
+                    color = 'yellow'
+                    break
+                case 4:
+                    color = 'green'
+                    break
+            }
+            div.style.backgroundColor = color
+        }
+    </script>
+</body>
+</html>

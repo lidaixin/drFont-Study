@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab栏切换</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        display: inline;
+    }
+    li a {
+        display: inline;
+        padding: 0 15px 0 15px;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+        background-color: thistle;
+    }
+    hr{
+        margin: 5px;
+    }
+
+    div{
+        width: 200px;
+        height: 200px;
+    }
+    .item {
+            display: none;
+        }
+   
+</style>
+<body>
+    <div style="width: 1000px;" class="tab_list">
+        <hr>
+        <ul>
+            <li><a href="#" class="current">首页</a></li>
+            <li><a href="#">手机新浪网</a></li>
+            <li><a href="#">移动客户端</a></li>
+            <li><a href="#">博客</a></li>
+            <li><a href="#">微博</a></li>
+            <li><a href="#">关注我</a></li>
+        </ul>
+        <hr>
+    </div>
+    <div class="item">
+        首页
+    </div>
+    <div class="item" style="display: block;">
+        手机新浪网
+    </div>
+    <div class="item">
+        移动客户端
+    </div>
+    <div class="item">
+        博客
+    </div>
+    <div class="item">
+        微博
+    </div>
+    <div class="item">
+        关注我
+    </div>
+
+    <script>
+        var tab_list = document.querySelector('.tab_list');
+        var items = document.querySelectorAll('.item');
+        var lis = tab_list.querySelectorAll('li');
+        for(var i=0;i<lis.length;i++){
+                        // 开始给5个小li 设置索引号 
+            lis[i].setAttribute('index', i);
+            lis[i].onclick = function() {
+                // 1. 上的模块选项卡，点击某一个，当前这一个底色会是红色，其余不变（排他思想） 修改类名的方式
+
+                // 干掉所有人 其余的li清除 class 这个类
+                for (var i = 0; i < lis.length; i++) {
+                    lis[i].className = '';
+                }
+                // 留下我自己 
+                this.className = 'current';
+                // 2. 下面的显示内容模块
+                var index = this.getAttribute('index');
+                console.log(index);
+                // 干掉所有人 让其余的item 这些div 隐藏
+                for (var i = 0; i < items.length; i++) {
+                    items[i].style.display = 'none';
+                }
+                // 留下我自己 让对应的item 显示出来
+                items[index].style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

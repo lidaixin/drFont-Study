@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var date = new Date()
+        console.log(""+date.getDate)
+        console.log(date.getDay)
+        console.log(date.getFullYear)
+        console.log(date.getMonth)
+        console.log(date.getHours)
+        console.log(date.getTime)
+
+
+        //格式化时间
+        var dateStr = `${date.getFullYear()}年${date.getMonth()}月${date.getDate()}日星期${date.getDay()}`
+        alert(dateStr)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

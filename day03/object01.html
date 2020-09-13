@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var person = {
+            name: 'tom',
+            age: 20,
+            say: function(){
+                console.log(this.name)
+            }
+        }
+
+        // console.log(person.name)
+        person.say()
+        console.log(this)
+
+        var mingren = {
+            name: '鸣人',
+            gender: '男',
+            age: 19,
+            skill: function fenshen(){
+                console.log('分身。。。')
+            }
+        }
+
+        var person1 = new Object()
+        person1.age=19
+        person1.name='鸣人'
+        person1.gender='男'
+        person1.skill=function fenshen(){
+                console.log('分身。。。')
+            }
+
+        function person2(name,age){
+            this.name=name
+            this.age=age
+            this.say=function(){
+                console.log(this.name)
+            }
+        }
+
+        var p = new person2('tom',20)
+        p.say()
+        console.log(p instanceof person2)
+
+        //遍历对象
+        for(var key in p){
+            console.log(p[key])
+        }
+
+
+        //== 与 ===
+        //==先判断类型，如果类型不一致，做隐式转换再比较值
+        //===先比较类型，类型不相等为false，相等比较值
+        console.log(2 == '2')
+        console.log(2 === '2')
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

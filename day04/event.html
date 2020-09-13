@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+        <span>这是一个div</span>
+    </div>
+    <button onclick="fn()">click me!</button>
+
+    <button onclick="getDate()">点击获取当前时间</button>
+    <!-- 用于展示时间的div -->
+    <div id="date">
+        
+    </div>
+
+    <!--  -->
+    <div>
+        <img id="img" width="300px" src="../day01/image/1.jpg" alt="" onclick="upadteIMG()">
+    </div>
+    <script>
+        //innerText会去除空格和换行
+        //innerHTML会保留空格和换行
+
+        function upadteIMG(){
+            var img = document.getElementById('img')
+            console.log(img.src)
+            if(img.src === "http://127.0.0.1:5500/day01/image/1.jpg")
+                img.src='http://127.0.0.1:5500//day01/image/风景.jpg'
+            else
+                img.src = "http://127.0.0.1:5500/day01/image/1.jpg"
+        }
+
+
+        function getDate(){
+            var date = new Date()
+            var div = document.getElementById('date')
+            var year = date.getFullYear()
+            var month = date.getMonth()+1
+            var day = date.getDay()
+            var arr =['星期日','星期一','星期二','星期三','星期四','星期五','星期六']
+
+            div.innerHTML=`<h1>当前时间为：${year}年${month}月${day}日  ${arr[day]}}</h1>`
+        }
+
+
+
+
+        var fn = function(){
+            div.innerHTML='<span style="color: red;color: blue;">这是改变后的div</span>'
+            alert('ok')
+        }
+
+        var div = document.getElementById('div')
+        console.log(div.innerText)
+        console.log('---------------------')
+        console.log(div.innerHTML)
+    </script>
+</body>
+</html>

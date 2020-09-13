@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var reg = /[A-z]/
+        // var reg1 = /[^s^2a]/
+        // var reg2 = /^2/  //^以什么开头   $: 以什么结尾
+        // var str = 'a212sf123'
+        // console.log(reg.test(str))
+        // console.log(reg1.test(str))
+        // console.log(reg2.test(str))
+
+        // var a = reg1.exec(str)
+        // console.log(a)re
+
+
+// \d匹配数字,即0-9
+// \D匹配非数字，即不是数字 [^0-9]
+// \s匹配空白，即 空格，tab键
+// \S匹配非空白
+// \w匹配单词字符，即a-z、A-Z、0-9、_
+// \W匹配非单词字符
+// ?表示出现0次或1次
+
+        //验证用户名
+        // var uname = prompt('请输入用户名：')
+        // var reg = /^[A-z0-9\s]{6,16}$/
+        // if(reg.test(uname)){
+        //     alert('该用户名可以使用！')
+        // }else{
+        //     alert('用户名不合法！')
+        // }
+
+        //验证邮箱
+        // var email = prompt('请输入邮箱：')
+        // var reg = /^\w{5,20}@(qq|163)\.com$/
+        // if(reg.test(email)){
+        //     alert('该邮箱可以使用！')
+        // }else{
+        //     alert('邮箱格式错误！')
+        // }
+
+        //判断邮箱类型
+        // var email = prompt('请输入邮箱：')
+        // var reg = /^\w{5,20}@(qq|163)\.com$/
+        // var res = reg.exec(email)
+        // if(res != null){
+        //    var flag = res[1]
+        //     if(flag === 'qq'){
+        //         alert('欢迎您，腾讯邮箱用户')
+        //     }else if(flag ==='163'){
+        //         alert('欢迎您，163邮箱用户')
+        //     }
+        // }else{
+        //     alert('邮箱格式错误！')
+        // }
+
+        var str = '1AAA2abhguo234khh1b21k'
+        res = str.match(/[A-z]/g)
+        console.log(res)
+
+        var a = '123'
+        var str = 'ttt${a}932dfk${a}d32'
+        str = str.replace(/\${a}/g,a)
+        console.log(str)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

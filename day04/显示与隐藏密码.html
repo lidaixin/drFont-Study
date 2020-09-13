@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        密码：<input id="pwd" type="password" value=""><div><img id="lock" onclick="trans()" width="10px" src="image/lock.png" alt=""></div>
+    </div>
+    <script>
+        var img = document.getElementById('lock')
+        var pwd = document.getElementById('pwd')
+        var flag = 0  //0代表锁  1代表开锁
+        function trans(){
+            if(flag===0){
+                flag=1
+                pwd.type='text'
+                img.src='image/unlock.png'
+            }else{
+                flag=0
+                pwd.type='password'
+                img.src='image/lock.png'
+            }
+        }
+    </script>
+</body>
+</html>

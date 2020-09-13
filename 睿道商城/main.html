@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+      <!-- 引入facicon.ico网页图标 -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>睿道商城</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 引入主页面css -->
+    <link rel="stylesheet" href="css/main.css">
+    <script src="bootstrap-3.3.7-dist/js/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="sider">
+        <ul class="nav nav-pills">
+            <a href="#">
+                个人中心
+            </a>
+            <a href="#">
+                售后服务
+            </a>
+            <a href="#">
+                人工客服
+            </a>
+            <a href="#">
+                购物车
+            </a>
+        </ul>
+    </div>
+
+    <div>
+        <a href="#"><img src="images/top.png" style="width: 100%;   " alt=""></a>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">小米商城</a></li>
+                    <li><a href="#">MIUI</a></li>
+                    <li><a href="#">loT</a></li>
+                    <li><a href="#">云服务</a></li>
+                    <li><a href="#">金融</a></li>
+                    <li><a href="#">有品</a></li>
+                    <li><a href="#">小爱开放平台</a></li>
+                    <li><a href="#">企业团购</a></li>
+                    <li><a href="#">资质证照</a></li>
+                    <li><a href="#">协议规则</a></li>
+                    <li><a href="#">下载app</a></li>
+                </ul>
+                <ul class="nav navbar-nav rightNav">
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#">消息通知</a></li>
+                    <li><a href="#">购物车</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ad轮播图 -->
+    <div class="container">
+        <div class="row">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="carousel-img-container" style="background-color: #801BB7;">
+                            <img class="banner" src="./images/banner/banner1.png">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-img-container" style="background-color: #FFCE12;">
+                            <img class="banner" src="images/banner/banner2.jpg"">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-img-container" style="background-color: #E80C30;">
+                            <img class="banner" src="./images/banner/banner3.jpg">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-img-container" style="background-color: #4282AE;">
+                            <img class="banner" src="./images/banner/banner4.jpg">
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="margin-top:40px">
+        <!-- 商品列表区域 -->
+        <div class="content-nav" style="width: 100%;">
+            <span class="category-name">手机</span>
+            <span class="category-all">查看全部<a href="#" class="glyphicon glyphicon-chevron-right"></a></span>
+        </div>
+    </div>
+
+
+    <!-- 商品列表区 -->
+    <div class="container" style="background-color: rgb(245,245,245);">
+        <div class="row"">
+            <div class=" col-md-2" style="padding-top: 65px;">
+            <img src="images/product/left.webp" style="width: 180px;height: 400px;" alt="">
+        </div>
+        <div class="col-md-10">
+            <ul>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div style="margin-top:40px">
+        <!-- 商品列表区域 -->
+        <div class="content-nav" style="width: 100%;">
+            <span class="category-name">手机</span>
+            <span class="category-all">查看全部<a href="#" class="glyphicon glyphicon-chevron-right"></a></span>
+        </div>
+    </div>
+
+
+    <!-- 商品列表区 -->
+    <div class="container" style="background-color: rgb(245,245,245);">
+        <div class="row"">
+            <div class=" col-md-2" style="padding-top: 65px;">
+            <img src="images/product/left.webp" style="width: 180px;height: 400px;" alt="">
+        </div>
+        <div class="col-md-10">
+            <ul>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" class="card"><img src="images/product/product1.webp" alt="">
+                            <h3 class="title">小米10</h3>
+                            <p class="desc">骁龙865/1亿像素相机</p>
+                            <p class="price">
+                                <span class="num">3999</span>元
+                            </p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div style="margin-top: 100px;">
+        <!-- 底部导航 -->
+        <div>
+            <div class="site-footer">
+                <div class="container">
+                    <div class="footer-links clearfix">
+                        <dl class="col-links col-links-first">
+                            <dt>帮助中心</dt>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="8cdb3fd193998efb"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-8cdb3fd193998efb','//www.mi.com/service/account/Account%20registration/','pcpid','undefined']);">账户管理</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="0bdbd5ae181de92b"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-0bdbd5ae181de92b','//www.mi.com/service/buy/SalesTime/','pcpid','undefined']);">购物指南</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="129ad32e2936fa21"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-129ad32e2936fa21','//www.mi.com/service/order/sendprogress/','pcpid','undefined']);">订单操作</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-links ">
+                            <dt>服务支持</dt>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="e4e8494b929c27cc"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-e4e8494b929c27cc','//www.mi.com/service/exchange','pcpid','undefined']);">售后政策</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="bf7e18f83fc87ed5"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-bf7e18f83fc87ed5','//www.mi.com/service/','pcpid','undefined']);">自助服务</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="1511e2519af499ed"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-1511e2519af499ed','//www.mi.com/c/service/download/','pcpid','undefined']);">相关下载</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-links ">
+                            <dt>线下门店</dt>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="e3093a95cf90118a"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-e3093a95cf90118a','//www.mi.com/c/xiaomizhijia/','pcpid','undefined']);">小米之家</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="66ee537fcde8d4f1"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-66ee537fcde8d4f1','//www.mi.com/service/sitelist','pcpid','undefined']);">服务网点</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="aaa656f429cfec0e"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-aaa656f429cfec0e','//www.mi.com/service/family-location','pcpid','undefined']);">授权体验店</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-links ">
+                            <dt>关于小米</dt>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="7793e051987d4005"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-7793e051987d4005','//www.mi.com/about/','pcpid','undefined']);">了解小米</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="9fd68aa94d19e175"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-9fd68aa94d19e175','//hr.xiaomi.com/','pcpid','undefined']);">加入小米</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="2791611b8d726c36"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-2791611b8d726c36','//company.mi.com/zh-cn/ir/indexContent/index.html','pcpid','undefined']);">投资者关系</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="85dbc7dac91b4c4a"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-85dbc7dac91b4c4a','//www.mi.com/csr/','pcpid','undefined']);">企业社会责任</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="918eeb935e784aca"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-918eeb935e784aca','//integrity.mi.com/','pcpid','undefined']);">廉洁举报</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-links ">
+                            <dt>关注我们</dt>
+                            <dd><a rel="nofollow" target="_blank" data-stat-id="d3836c1ad2bb2ecd"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-d3836c1ad2bb2ecd','//weibo.com/xiaomishangcheng','pcpid','undefined']);">新浪微博</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="javascript:void(0);" id="J_siteWeixinCode"
+                                    data-stat-id="c8f0c42ed3c642bd"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-c8f0c42ed3c642bd','javascript:void(0);','pcpid','undefined']);">官方微信</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="ef5b42063eda339b"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-ef5b42063eda339b','//www.mi.com/about/contact/','pcpid','undefined']);">联系我们</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="6a404dc76abbd216"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-6a404dc76abbd216','//www.mi.com/foundation/index','pcpid','undefined']);">公益基金会</a>
+                            </dd>
+                        </dl>
+                        <dl class="col-links ">
+                            <dt>特色服务</dt>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="b8cb82d622cfa059"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-b8cb82d622cfa059','//www.mi.com/order/fcode','pcpid','undefined']);">F
+                                    码通道</a></dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="f83b72acd5919e74"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-f83b72acd5919e74','//www.mi.com/order/giftcode','pcpid','undefined']);">礼物码</a>
+                            </dd>
+                            <dd><a rel="nofollow" href="#" target="_blank" data-stat-id="fab91601b7c3d088"
+                                    onclick="_msq.push(['trackEvent','81190ccc4d52f577-fab91601b7c3d088','//www.mi.com/service/imei','pcpid','undefined']);">防伪查询</a>
+                            </dd>
+                        </dl>
+                        <div class="col-contact">
+                            <p class="phone">400-100-5678</p>
+                            <p>8:00-18:00（仅收市话费）</p> <a rel="nofollow"
+                                class="btn btn-line-primary btn-small J_contactBtn" data-stat-id="55b193a0fd42f936"
+                                onclick="_msq.push(['trackEvent','81190ccc4d52f577-55b193a0fd42f936','','pcpid','undefined']);"><em
+                                    class="iconfont-message2"></em> 人工客服 </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div style="display:block; text-align: center;">
+            <footer class="container-fluid">
+                <div class="row footer-info">
+                    <span>东软睿道 版权所有Copyright 2006-2018, All Rights Reserved 辽B2-20130060-8</span>
+                </div>
+            </footer>
+        </div>
+</body>
+
+</html>

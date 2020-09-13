@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    </script>
+</head>
+<body>
+    <h1 id="title">我的标题</h1>
+    <ul>
+        <li>知否知否，应是等你好久11</li>
+        <li>知否知否，应是等你好久22</li>
+        <li>知否知否，应是等你好久33</li>
+        <li>知否知否，应是等你好久44</li>
+        <li>知否知否，应是等你好久55</li>
+    </ul>
+    <ul id="nav">
+        <li>生僻字</li>
+        <li>生僻字</li>
+        <li>生僻字</li>
+        <li>生僻字</li>
+        <li>生僻字</li>
+    </ul>
+
+    <!-- 由于页面时从上往下依次加载，所以获取元素时，要保证该元素已经被创建
+        所以通常将js代码写在body最后一个标签
+    -->
+    <script>
+        var text = document.getElementById('nav')
+        alert(text)
+        var h1 = document.getElementById('title')
+        console.log(typeof h1)  //HTMLElement
+
+        var ul = document.getElementsByTagName('ul')[0]
+        var lis = ul.getElementsByTagName('li')
+        console.log(lis)
+        
+    </script>
+</body>
+</html>

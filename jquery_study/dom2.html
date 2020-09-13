@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            // (method) JQuery.each(func: (index: number, elem: Element) => any): JQuery
+            //遍历的是F原生对象
+            $('ul>li').each((index, li) => {
+                console.log(`index:${index},li:${$(li).text()}`)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li id="id">多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li class='before'>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+        <li>多个里面筛选几个</li>
+    </ul>
+</body>
+
+</html>

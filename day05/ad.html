@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //入口函数
+    //     document.addEventListener("DOMContentLoaded",function(){
+    //         //该函数有两个参数，
+    //         // 第一个是回调函数（时间到了执行的逻辑）
+    //         // 第二个参数是设定的时间
+    //         // var ad = document.getElementById('ad')
+    //         // var st = setTimeout(function(){
+    //         //     ad.style.display = 'none'
+    //         //     clearTimeout(st)
+    //         // },5000)
+    //         var time = document.getElementById('time')
+    //         // var i = 60
+    //         // // time.innerHTML=`<h1>${i}s<h1>`
+    //         // var st = setInterval(function(){
+    //         //     if(i===-1){
+    //         //         time.style.disabled=false
+    //         //         return
+    //         //     }
+    //         //     // console.log(`你还有${i}s`)
+    //         //     time.innerText=`${i}s`
+    //         //     i--
+    //         // },1000)   
+
+    //         function click(){
+    //             time.style.disabled=true
+    //             var i = 60
+    //             // time.innerHTML=`<h1>${i}s<h1>`
+    //             setInterval(function(){
+    //                 if(i===-1){
+    //                     time.style.disabled=false
+    //                     return
+    //                 }
+    //                 console.log(`你还有${i}s`)
+    //                 time.innerText=`${i}s`
+    //                 i--
+    //             },1000)   
+    //         }
+
+    //         // function stopInter(){
+    //         //     clearInterval(st)
+    //         // }
+            
+    //     })
+    // </script>
+</head>
+<body>
+    <div>
+        <!-- <img id="ad" src="image/lock.png" alt=""> -->
+    </div>
+
+    <!-- <button onclick="stopInter">点击停止</button> -time->
+    <div>       
+        <!-- <div id='time' style="width: 100px;margin: 10px auto;"></div> -->
+        请输入手机号：<input type="text"><button id="time">点击发送</button>
+    </div>
+
+    <script>
+          var time = document.getElementById('time')
+          var i = 59
+            time.addEventListener('click', function (){
+                console.log('test')
+                this.disabled=true
+                // time.innerHTML=`<h1>${i}s<h1>`
+                setInterval(function(){
+                    if(i===-1){
+                        time.style.disabled=false
+                        return
+                    }
+                    // console.log(`你还有${i}s`)
+                    time.innerText=`${i}s`
+                    i--
+                },1000)   
+            }) 
+            
+    </script>
+</body>
+</html>
